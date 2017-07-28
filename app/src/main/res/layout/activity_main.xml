@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ccr.achengratingbar.MainActivity">
+
+    <com.ccr.ratingbarlibrary.AchengRatingBar
+        android:id="@+id/sample0"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:touchable="true" />
+
+    <com.ccr.ratingbarlibrary.AchengRatingBar
+        android:id="@+id/sample1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:imageHeight="30dp"
+        app:imageWidth="30dp"
+        app:spanSize="5dp"
+        app:minStep="0.1"
+        app:maxCount="5"
+        app:touchable="true" />
+
+
+    <com.ccr.ratingbarlibrary.AchengRatingBar
+        android:id="@+id/sample2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:backImage="@drawable/ic_favorite_border_red_a700_24dp"
+        app:frontImage="@drawable/ic_favorite_red_a700_24dp"
+        android:layout_marginTop="10dp"
+        app:minStep="1"
+        app:maxCount="5"
+        app:spanSize="20dp"
+        app:touchable="true" />
+
+
+
+
+
+</LinearLayout>
