@@ -125,6 +125,8 @@ public class AchengRatingBar extends View {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         if (mFront.getWidth() != mBack.getWidth() || mFront.getHeight() != mBack.getHeight()) {
             new Throwable("the front and back bitmap's width or height must be equal");
+            setMeasuredDimension(widthMeasureSpec, heightMeasureSpec);
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
             return;
         }
 
