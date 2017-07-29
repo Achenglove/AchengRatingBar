@@ -123,13 +123,10 @@ public class AchengRatingBar extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        if (mFront.getWidth() != mBack.getWidth() || mFront.getHeight() != mBack.getHeight()) {
-            new Throwable("the front and back bitmap's width or height must be equal");
-            setMeasuredDimension(mBack.getWidth(), mBack.getHeight());
-//            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-            return;
-
-        }
+//        if (mFront.getWidth() != mBack.getWidth() || mFront.getHeight() != mBack.getHeight()) {
+//            new Throwable("the front and back bitmap's width or height must be equal");
+//            return;
+//        }
 
         int specMode = MeasureSpec.getMode(widthMeasureSpec);
         if (specMode == MeasureSpec.EXACTLY) {
@@ -154,6 +151,7 @@ public class AchengRatingBar extends View {
             mViewHeight = mBitmapDstHeight;
         }
         setMeasuredDimension(mViewWidth, mViewHeight);
+
     }
 
 
